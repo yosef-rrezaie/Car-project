@@ -1,10 +1,15 @@
 import carsData from "@/data/carsData";
 import { useRouter } from "next/router";
 import React from "react";
+import CarDetail from "@/components/templates/CarDetail";
 
-export default function CarDetail() {
-  const router = useRouter().query;
-  const { carsId } = router;
-  const carDetails = carsData[carsId - 1];
-  return <div>{carsId}</div>;
+function DetailsCar() {
+  const router = useRouter();
+  const { carsId } = router.query;
+  const carDetails = carsData[Number(carsId) - 1];
+  return (
+    <CarDetail carDetails={carDetails}/>
+  );
 }
+
+export default DetailsCar
