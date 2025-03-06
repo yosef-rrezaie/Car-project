@@ -8,11 +8,12 @@
     align-items: center;
     font-size: 1.5rem;
     width: fit-content;
-    background-color: #befa00;
+    background-color: #6ac4df;
     padding: 10px 15px;
     border-radius: 5px;
     margin: 50px 0;
     cursor: pointer;
+    color: white;
   }
   
   .back p {
